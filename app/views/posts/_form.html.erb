@@ -1,0 +1,7 @@
+<%= form_for @post do |f| %>
+  <%= f.text_field :title, placeholder: 'Titel' %>
+  <%= f.text_area :abstract, placeholder: 'Zusammenfassung' %>
+  <%= f.text_area :content, placeholder: 'Inhalt' %>
+  <%= f.submit %>
+  <%= link_to 'Post löschen', @post, method: :delete unless @post.new_record?%>
+<% end %>
