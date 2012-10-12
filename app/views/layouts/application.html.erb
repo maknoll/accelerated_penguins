@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AcceleratedPenguins</title>
+  <title>Hyperaccelerated Penguins</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<section class="content">
+  <%= link_to root_url do %>
+    <h1 class="blog_title">Hyperaccelerated Penguins</h1>
+  <% end %>
 
-<%= yield %>
-
+  <%= yield %>
+</section>
 </body>
 </html>

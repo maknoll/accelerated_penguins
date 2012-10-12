@@ -1,0 +1,8 @@
+<article>
+  <%= link_to post do %>
+    <h1><%= post.title %></h1>
+    <%= markdown post.abstract %>
+  <% end %>
+  <time><%= "geschrieben am #{localize post.created_at} von #{post.author.name}" %></time> 
+</article>
+

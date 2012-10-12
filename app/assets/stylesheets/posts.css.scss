@@ -1,0 +1,27 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+section.content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+time {
+  margin-top: 3em;
+}
+
+.author h2 {
+  margin-top: 1.5em;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.author img {
+  float: left;
+  margin-right: 1em;
+  max-width: 100px;
+  border: 1px solid #444;
+}

@@ -1,0 +1,11 @@
+<article>
+  <h1><%= @post.title %></h1>
+  <%= markdown @post.content %>
+  <time><%= "geschrieben am #{localize @post.created_at}" %></time>
+  <section class="author">
+    <h2>Über den Autor</h2>
+    <%= image_tag "martin.jpg" %>
+    <h3><%= @post.author.name %></h3>
+    <%= markdown @post.author.about if @post.author.about %>
+  </section>
+</article>
